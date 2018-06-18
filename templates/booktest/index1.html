@@ -5,10 +5,11 @@
     <title>Title</title>
 </head>
 <body>
-<ul>
+<table border="1">
     {%for book in list%}
-    <li><a href="{{book.id}}">{{book.btitle}}</a></li>
+    <tr><td><a href="{{book.id}}">{{book.btitle}}</a></td></tr>
     {%endfor%}
-</ul>
+</table>
+
 </body>
 </html>
