@@ -12,7 +12,7 @@ class BookInfoAdmin(admin.ModelAdmin):
     search_fields = ['btitle']
     list_per_page = 1
     fieldsets = [
-        ('base', {'fields':['id','btitle']}),
+        ('base', {'fields':['btitle']}),
         ('super', {'fields':['bpub_date']})
     ]
     inlines = [HeroInfoInline]
